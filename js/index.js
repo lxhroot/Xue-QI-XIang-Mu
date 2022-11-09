@@ -1,3 +1,11 @@
+/*
+ * @Author: error: git config user.name && git config user.email & please set dead value or install git
+ * @Date: 2022-10-22 23:53:53
+ * @LastEditors: error: git config user.name && git config user.email & please set dead value or install git
+ * @LastEditTime: 2022-11-09 18:49:18
+ * @FilePath: \Semester projects\js\index.js
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 /**
  * 乐购商城首页js
  * 2022/20/23 李鸿
@@ -71,4 +79,55 @@ $(function() {
         controlsColor: "#d7d7d7", //普通控制按钮的颜色
         controlsCurrentColor: "#00ff00", //当前控制按钮的颜色
     });
+    // 儿童服装轮播
+    $('#children-clothes-banner').tyslide({
+        boxh: 340, //盒子的高度
+        w: 430, //盒子的宽度
+        h: 340, //图片的高度
+        isShow: true, //是否显示控制器
+        isShowBtn: true, //是否显示左右按钮
+        controltop: 10, //控制按钮上下偏移的位置,要将按钮向下移动   首先保证boxh 高度>图片 h
+        controlsW: 20, //控制按钮宽度
+        controlsH: 3, //控制按钮高度
+        controlsColor: "#d7d7d7", //普通控制按钮的颜色
+        controlsCurrentColor: "#00ff00", //当前控制按钮的颜色
+    });
+     //电子书 卡片切换
+    // var $lis = $('.ebooks .ebooks-nav > li');
+    // $lis.mouseover(function(){
+    //     $(this).addClass('.ad').siblings().removeClass('.ad');
+
+    //     var index = $(this).index();
+
+    //     var $ebooksList = $('.content');
+
+    //     $ebooksList.eq(index).show.siblings('.content').hide();
+    // });
+
+
+    $('.ebooks .left-box .top .ebooks-nav li').mouseenter(function(){
+		$(this).addClass('active').siblings().removeClass('active');
+		var index = $(this).index();
+		$('.ebooks .left-box .content .left-box div').eq(index).show().siblings().hide();
+	});
+     //服装 卡片切换
+     $('.clothes .left-box .top .fr li').mouseenter(function(){
+		$(this).addClass('active').siblings().removeClass('active');
+		var index = $(this).index();
+		$('').eq(index).show().siblings().hide();
+	});
+
+     //户外运动 卡片切换
+     $('.sprot .left-box .top .fr li').mouseenter(function(){
+		$(this).addClass('active').siblings().removeClass('active');
+		var index = $(this).index();
+		$('').eq(index).show().siblings().hide();
+	});
+
+    //童装 童鞋 婴儿装 卡片切换
+    $('.children-clothes .left-box .top .fr li').mouseenter(function(){
+		$(this).addClass('active').siblings().removeClass('active');
+		var index = $(this).index();
+		$('').eq(index).show().siblings().hide();
+	});
 })
