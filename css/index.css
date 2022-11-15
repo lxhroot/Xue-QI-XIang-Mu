@@ -280,6 +280,7 @@
     top: 0;
     left: 198px;
     border: 2px solid #ff6700;
+    background-color: white;
     width: 500px;
     height: 426px;
     display: none;
@@ -956,12 +957,13 @@
 
 /* 7.======童装====== */
 
-.children-clothes{
+.children-clothes {
     height: 496px;
     width: 1200px;
     margin-top: 150px;
-    background-color: pink;
+
 }
+
 /* 左侧盒子 */
 
 .children-clothes .left-box {
@@ -1116,8 +1118,6 @@
 }
 
 
-/* 底部商标 */
-
 .children-clothes .left-box .ds {
     width: 1200px;
     height: 63px;
@@ -1129,58 +1129,172 @@
 }
 
 
-/* 9. */
+/* 7.======家居日用====== */
 
-.daily {
-    height: 500px;
-    background-color: green;
+
+#gear {
     margin-top: 150px;
+    height: 550px;
+    margin-bottom: 50px;
+
+}
+
+#gear #gearTop {
+    line-height: 40px;
+    text-indent: 24px;
+    font-size: 24px;
+    font-weight: 300;
+    border-bottom: #ff6700 6px solid;
+
 }
 
 
-/* 10. */
+#gearMiddle>div {
+    float: left;
+    border: 2px solid #ccc;
+    border-top: 0;
+}
+
+#gearMiddle>div:first-child {
+    width: 488px;
+    height: 502px;
+    background-image: none;
+}
+
+#gearMiddle>div:first-child>img {
+    width: 487px;
+    height: 502px;
+}
+
+#gearMiddle .dTop {
+    width: 175px;
+    height: 340px;
+}
+
+#gearMiddle .dBottom {
+    width: 175px;
+    height: 160px;
+}
+
+#gearMiddle div:not(.br) {
+    border-right: 0;
+}
+
+/* 7.======推广商品====== */
 
 .promode {
     height: 500px;
-    background-color: blue;
+}
+.promode .promode-name{
+    border-bottom: #ff6700 6px solid;
+    line-height: 40px;
+    text-indent: 24px;
+    font-size: 24px;
+    font-weight: 300;
+}
+.promode .promode-name ul li.active{
+    background-color: #ff6700;
+}
+.promode .promode-name ul li{
+    background-color: lightgray;
+    height: 12px;
+    width: 12px;
+    border-radius: 50% 50%;
+    margin-right: 15px;
+    margin-top: 20px;
+    float: left;
+} 
+
+
+.promode .promode-producte{
+    height: 480px;
+    background-color: white;
+}
+/* 外盒子 */
+.promode .promode-producte .out-box{
+    width: 1200px;
+    height: 480px;
+    overflow: hidden;
+}
+/* 内盒子 */
+.promode .promode-producte .out-box .inner-box{
+    width: 2400px;
+    height: 480px;
+    position: relative;
+    left: 0;
+}
+.promode .promode-producte ul{
+    width: 1200px;
+    height: 480px;
+    float: left;
+}
+.promode .promode-producte ul li{
+    width: 238px;
+    height: 237px;
+    float: left;
+    text-align: center;
+
+    
+}
+.promode .promode-producte ul li p ~ p{
+    font-size: 18px;
+    color: red;
+}
+.promode .promode-producte ul li .pinlun{
+    margin-left: 57px;
+}
+.promode .promode-producte ul li .pinlun img{
+    float: left;
+}
+.promode .promode-producte ul li .pinlun p{
+    float: left;
+}
+.promode .promode-producte ul li .pinlun p span{
+    color: red;
 }
 
 
-/* 11. */
+/* footer */
 
-.footer{
+.footer {
     width: auto;
     height: 472px;
+    margin-top: 50px;
 }
-#footerTop{
+
+#footerTop {
     width: auto;
-    
-    line-height: 100px;
+    padding-top: 0%;
+    line-height: 50px;
     height: 100px;
     border-top: 6px solid #f60;
     background: #f2f2f2;
 }
-#footerTop .container img{
+
+#footerTop .container img {
     margin-top: 0;
     margin-left: 50px;
-   
+
 }
-#footerTop>div{
+
+#footerTop>div {
     box-sizing: border-box;
     padding: 24px 160px;
 }
 
-#footerMiddle>div{
+#footerMiddle>div {
     width: 790px;
     height: 150px;
     margin: 0 auto;
     margin-top: 40px;
     position: relative;
 }
-#footerMiddle ul{
+
+#footerMiddle ul {
     margin-left: -50px;
 }
-#footerMiddle li{
+
+#footerMiddle li {
     width: 120px;
     height: 20px;
     float: left;
@@ -1189,20 +1303,24 @@
     text-align: center;
     line-height: 20px;
 }
-#footerMiddle div img{
+
+#footerMiddle div img {
 
     position: absolute;
     right: -190px;
 }
-#footerMiddle li>a{
+
+#footerMiddle li>a {
     font-size: 16px;
     color: #666;
 }
-#footerMiddle li>a.lia{
+
+#footerMiddle li>a.lia {
     font-size: 18px;
     color: #000;
 }
-#footerMiddle>p{
+
+#footerMiddle>p {
     margin-top: 15px;
     width: 890px;
     height: 15px;
@@ -1211,7 +1329,8 @@
     text-align: center;
     margin-top: 40px;
 }
-#footerMiddle>p>a{
+
+#footerMiddle>p>a {
     border-right: 1px solid #333;
     float: left;
     width: 150px;
@@ -1220,13 +1339,16 @@
     font-size: 14px;
     color: #333;
 }
-#footerMiddle>p>a:not(:nth-of-type(2)){
+
+#footerMiddle>p>a:not(:nth-of-type(2)) {
     width: 100px;
 }
-#footerMiddle>p>a:last-of-type{
+
+#footerMiddle>p>a:last-of-type {
     border-right: 0;
 }
-#footerMiddle>span{
+
+#footerMiddle>span {
     display: block;
     width: 360px;
     margin: 0 auto;

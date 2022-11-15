@@ -2,7 +2,7 @@
  * @Author: error: git config user.name && git config user.email & please set dead value or install git
  * @Date: 2022-10-22 23:53:53
  * @LastEditors: error: git config user.name && git config user.email & please set dead value or install git
- * @LastEditTime: 2022-11-09 18:49:18
+ * @LastEditTime: 2022-11-15 13:29:20
  * @FilePath: \Semester projects\js\index.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -92,30 +92,38 @@ $(function() {
         controlsColor: "#d7d7d7", //普通控制按钮的颜色
         controlsCurrentColor: "#00ff00", //当前控制按钮的颜色
     });
-     //电子书 卡片切换
-    // var $lis = $('.ebooks .ebooks-nav > li');
-    // $lis.mouseover(function(){
-    //     $(this).addClass('.ad').siblings().removeClass('.ad');
-
-    //     var index = $(this).index();
-
-    //     var $ebooksList = $('.content');
-
-    //     $ebooksList.eq(index).show.siblings('.content').hide();
-    // });
+    
+        $('.ebooks-list').eq(1).hide();
+	    $('.ebooks-list').eq(2).hide();	
 
 
-    $('.ebooks .left-box .top .ebooks-nav li').mouseenter(function(){
-		$(this).addClass('active').siblings().removeClass('active');
-		var index = $(this).index();
-		$('.ebooks .left-box .content .left-box div').eq(index).show().siblings().hide();
-	});
+    $('.ebooks-nav > li').mouseenter(function() {
+        // 导航高亮颜色切换
+        $(this).addClass('active').siblings('li').removeClass('active');
+        // 获取索引
+        var index = $(this).index();
+        // 内容切换
+        $('.ebooks-list').eq(index).show().siblings('.ebooks-list').hide();
+    })
+    
      //服装 卡片切换
-     $('.clothes .left-box .top .fr li').mouseenter(function(){
-		$(this).addClass('active').siblings().removeClass('active');
-		var index = $(this).index();
-		$('').eq(index).show().siblings().hide();
-	});
+        $('.content').eq(1).hide();
+	    $('.content').eq(2).hide();	
+
+
+    $('.clothes-nav > li').mouseenter(function() {
+        // 导航高亮颜色切换
+        $(this).addClass('active').siblings('li').removeClass('active');
+        // 获取索引
+        var index = $(this).index();
+        // 内容切换
+        $('.content').eq(index).show().siblings('.content').hide();
+    })
+    //  $('.clothes .left-box .top .fr li').mouseenter(function(){
+	// 	$(this).addClass('active').siblings().removeClass('active');
+	// 	var index = $(this).index();
+	// 	$('.content').eq(index).show().siblings('.content').hide();
+	// });
 
      //户外运动 卡片切换
      $('.sprot .left-box .top .fr li').mouseenter(function(){
@@ -130,4 +138,15 @@ $(function() {
 		var index = $(this).index();
 		$('').eq(index).show().siblings().hide();
 	});
+
+    // 推广商品卡片切换
+    //$('.produce').eq(1).hide();
+     $('.promode .promode-name ul li').mouseenter(function(){
+		$(this).addClass('active').siblings().removeClass('active');
+		var index = $(this).index();
+		$('.promode .promode-producte .inner-box').animate({
+            'left': -index * 1200
+        })
+	});
+        
 })
