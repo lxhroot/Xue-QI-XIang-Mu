@@ -331,7 +331,7 @@
         </div>
     </div>
     <!-- 5.电子书 -->
-    <div class="ebooks container clearfix">
+    <div class="floorBox ebooks container clearfix">
         <!-- 左侧盒子 -->
         <div class="left-box fl">
             <!-- 顶部 -->
@@ -664,7 +664,7 @@
     </div>
 
     <!-- 6.服装 -->
-    <div class="clothes container">
+    <div class="floorBox clothes container">
         <!-- 左侧盒子 -->
         <div class="left-box fl">
             <!-- 顶部 -->
@@ -946,6 +946,7 @@
                     </ul>
                 </div>
             </div>
+
             <!-- 底部商标 -->
             <div class="ds">
                 <ul>
@@ -981,7 +982,7 @@
         </div>
     </div>
     <!-- 7.户外运动 -->
-    <div class="sprot container">
+    <div class="floorBox sprot container">
         <!-- 左侧盒子 -->
         <div class="left-box fl">
             <!-- 顶部 -->
@@ -1120,7 +1121,7 @@
         </div>
     </div>
     <!-- 8.童装 -->
-    <div class="children-clothes container">
+    <div class="floorBox children-clothes container">
         <!-- 左侧盒子 -->
         <div class="left-box fl">
             <!-- 顶部 -->
@@ -1264,7 +1265,7 @@
     </div>
     </div>
     <!-- 9.家居日用 -->
-    <div id="gear" class="flooer container">
+    <div id="gear" class="floorBox flooer container">
         <div id="gearTop" class="pTop">
             <span>家居日用</span>
         </div>
@@ -1577,12 +1578,61 @@
         </div>
 
     </div>
+
+    <!-- 12.二维码 -->
+    <div class="Qr-code">
+        <p><img src="../images/two_30.jpg" alt=""></p>
+        <p><img src="../images/two_35.jpg" alt=""></p>
+        <div><img src="../images/two_34.jpg" alt=""></div>
+        <p><img src="../images/two_40.jpg" alt=""></p>
+    </div>
+   <!-- 顶部搜索框 -->
+   <div class="top-serch-box">
+    <div class="search-box">
+        <input class="search" placeholder="创意文具" type="text">
+    </div>
+   </div>
+    
+    <!-- 楼层滚动 -->
+
+    <ul class="floor">
+        <li>
+            <img src="../images/indexleft_05.png" alt="">
+            图书
+        </li>
+        <li>
+            <img src="../images/indexleft_08.png" alt="">
+            服装
+        </li>
+        <li>
+            <img src="../images/indexleft_11.png" alt="">
+            运动
+        </li>
+        <li>
+            <img src="../images/indexleft_14.png" alt="">
+            童装    
+        </li>
+        <li>
+            <img src="../images/indexleft_17.png" alt="">
+            运动
+        </li>
+    </ul>
+
     <!-- 引入jQuery.main.js -->
     <script src="./js/jquery-1.11.0.js"></script>
     <!-- 引入轮播插件 -->
     <script src="./js/slider.js"></script>
     <!-- 引入自己写的js文件 -->
     <script src="./js/index.js"></script>
+     <!-- 返回顶部 -->
+     <script src="./js/GoToTop.js"></script>
+     <script>
+        $(function(){
+            GoToTop()
+        })
+        
+    </script>
+
 </body>
 
 </html>

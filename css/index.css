@@ -1357,3 +1357,101 @@
     font-size: 14px;
     color: #333;
 }
+
+/* 二维码 */
+
+.Qr-code{
+    width: 40px;
+    height: 180px;
+    position: fixed;
+    top: 185px;
+    right: 0px;
+}
+
+.Qr-code p{
+    width: 40px;
+    height: 40px;
+    background-color: pink;
+   
+}
+
+.Qr-code p img{
+    width: 100%;
+    height: 100%;
+}
+
+.Qr-code p:nth-child(2){
+    height: 100px;
+    background-color: #ff6700;
+    
+}
+
+.Qr-code div{
+    position: absolute;
+    top: 40px;
+    z-index: -10;
+}
+
+/* <!-- 顶部搜索框 --> */
+
+.top-serch-box{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgba(255, 123, 0, 0.8);
+    position: fixed;
+    display: none;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+
+.top-serch-box .search-box{
+    width: 400px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #ff6700;
+    margin: 10px auto;
+    background-image: url('../images/bgicon.png');
+    background-repeat: no-repeat;
+    background-position: 357px -2px;
+
+}
+
+.top-serch-box .search-box input{
+    height: 26px;
+    width: 360px;
+    border: 2px solid #ff6700;
+    outline: none;
+    text-indent: 10px;
+}
+
+/* <!-- 楼层跳转 --> */
+
+.floor{
+    width: 40px;
+    height: 200px;
+    background-color: #f2f2f2;
+    margin-left: 50%;
+    left: -640PX;
+    position: fixed;
+    top: 250px;
+}
+
+.floor li{
+    width: 40PX;
+    height: 40PX;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.floor li:hover{
+    width: 80px;
+    color: white;
+    background-color: #93d56f;
+}
+
+.floor li img{
+    width: 40px;
+    height: 40px;
+}
