@@ -1442,7 +1442,7 @@
     width: 40PX;
     height: 40PX;
     overflow: hidden;
-    transition: all 0.3s;
+    transition: all 0.5s;
 }
 
 .floor li:hover{
